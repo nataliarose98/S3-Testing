@@ -1,86 +1,71 @@
-# Sprint 3 IT Academy | Video management tool
+# Sprint 3 IT Academy | Video Management Tool
 
-## Introduction
+## Project Description
+This project corresponds to **Sprint 3 of the Frontend Bootcamp (IT Academy – Barcelona Activa)**.  
+The main goal is to strengthen the use of **JavaScript array methods** and apply **unit testing with Jest** to ensure code quality.
 
-A company in the audiovisual sector has asked us for a web application that will allow their employees to quickly find movies from a large database they have, since the process is currently done manually.
+---
 
-You will be in charge of setting up the core of the application: all the logic of filtering and sorting of movies. You have 2 weeks to finish, which is how long this sprint lasts.
+## Technologies Used
+- **JavaScript (ES6+)**
+- **Node.js**
+- **Jest** for testing
+- **Git & GitHub**
 
-<br>
+---
 
-## Requirements
+## How to Clone and Run the Project
 
-
-1. Clone this repo
-```bash
-$ git clone https://github.com/IT-Academy-BCN/starter-code-frontend-sprint-3-movies
+### 1. Clone the repository  
+In your terminal, run:
+```
+git clone https://github.com/nataliarose98/S3-Testing.git
 ```
 
-2. Unlink your repo from the itacademy repository
-```bash
-$ git remote rm origin
+### 2. Enter the directory:
+
+```
+cd starter-code-frontend-sprint-3-movies
 ```
 
-3. Link your repo to the repository you have to create in your github account
-```bash
-$ git remote add origin <your repo name!>
+### 4. Install dependencies  
+Make sure you have Node.js installed.  
+Then run:
+```
+npm install
 ```
 
-<br>
-
-## Submission
-
-1. Upon completion, run the following commands:
-
-```bash
-$ git add .
-$ git commit -m "Sprint Solution"
-$ git push origin master
+### 5. Run the tests
+```
+npm run test:watch
 ```
 
-2. Create Pull Request.
+---
 
-3. Upload the link to the virtual campus so that your mentor can correct it and give you feedback.
+## Project Structure
 
-
-
-<br>
-
-## Introduction
-
-The statement of the exercise is available on the virtual campus.
-
-<br>
-
-## Tests!
-
-
-```shell
-$ npm install
-$ npm run test:watch
+```
+S3-Testing/
+│
+└── starter-code-frontend-sprint-3-movies/
+│
+├── .github/
+├── node_modules/
+├── src/
+│ ├── data.js
+│ ├── films.js
+│ └── index.html
+│
+├── tests/
+│ └── films.spec.js
+│
+├── .gitignore
+├── package.json
+└── README.md
 ```
 
-And last, open the generated `test-results.html` file with the "Live Server" VSCode extension to see test results.
 
-Apart from the statement, you will know exactly what you are asked to do by looking at the file `tests/films.spec.js`, all tests are already defined here!
 
-<br>
 
-## Instructions
-
-You have the following indications from the frontend responsible:
-
-- It is mandatory to implement all loops in ES6 (using map, reduce, filter and sort to manipulate arrays).
-
-- As at the moment we don't consume data from a server using an API, we will work with data from the src/data.js archive. For the moment we will implement the logic using
-an array of information about 250 movies.
-
-- The implementation is about processing this array of movies, to display it as requested in each exercise.
-
-- The logic to implement will be placed in the src/films.js file.
-
-- You don't need to show the result of each function on the screen. Your goal is to pass the tests.  More information on how to program oriented to pass tests at the end of the document.
-
-- Don't forget to include the capture of the test results in the virtual campus.
 
 
